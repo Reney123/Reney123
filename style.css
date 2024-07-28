@@ -1,0 +1,169 @@
+@charset "utf-8";
+*{
+	padding:0;
+	margin:0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'montserrat';
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background-color: #5c4033;
+	
+}
+nav{
+	height: 80px;
+	width: 100%;
+	background-color: #5c4033;
+}
+label.logo{
+	margin-top: 10px;
+}
+label.logo img{
+	width: 150px;
+	height: 12vh;
+	margin-left: 30px;
+	cursor: pointer;
+}
+
+.navbar{
+	float: right;
+	margin-right: 20px;
+}
+.navbar ul li{
+	display: inline-block;
+	margin: 50 0px;
+	line-height: 80px;
+}
+.navbar ul li a{
+	color: #fffdd0;
+	font-size: 18px;
+	text-transform: uppercase;
+	border: 1px solid transparent;
+	padding: 7px 10px;
+	border-radius: 3px;
+}
+a.active,a:hover{
+	border: 1px solid #808080;
+	transition: .5s;
+}
+section{
+	padding: 70px 17%;
+}
+.home{
+	width: 100%;
+	min-height: 90vh;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1.5rem;
+	align-items: center;
+	background-image: linear-gradient(to left, rgba(92,64,51,0.6), rgba(92,64,51,0.3)), url("Images/bg1.jpg");
+}
+.home-img img{
+	max-width: 100%;
+	width: 600px;
+	height: auto;
+	border-radius: 50px;
+}
+.home-txt h5{
+	font-size: 4em;
+	color: #fffdd0;
+}
+
+.home-txt h6{
+	font-size: 1.2em;
+	margin: 1rem 0 2rem;
+}
+.btn{
+	display: inline-block;
+	padding: 10px 20px;
+	background: #bab86c;
+	color: #5c4033;
+	border-radius: 0.5rem;
+}
+.btn:hover{
+	transform: scale(1.2) translateY(10px);
+	transition: .4s;
+}
+
+.heading{
+	text-align: center;
+}
+.heading span{
+	color: #fffdd0;
+	font-weight: 600;
+}
+.heading h6{
+	font-size: 1.2em;
+}
+
+
+.main{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer{
+	padding: 10px 0;
+}
+.col{
+	width: 25%;
+}
+.col h8{
+	font-size: 1.2rem;
+	color: #bab86c;
+	margin-bottom: 25px;
+	position: relative;
+}
+.col h8::before{
+	content: "";
+	position: absolute;
+	height: 2px;
+	width: 50px;
+	left: 0;
+	bottom: -8px;
+	background: #bab86c;
+}
+.col ul li:not(last-child) {
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+.col ul li a{
+	color: #808080;
+	font-size: 1.1rem;
+	display: block;
+	text-transform: capitalize;
+	transition: .4s;
+}
+.col ul li a:hover{
+	color: #fffdd0;
+	transform: translateX(-12px);
+}
+.col .social{
+	width: 220px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.col .social a{
+	height: 40px;
+	width: 40px;
+	margin-top: 10px;
+	background: #808080;
+	color: #fffdd0;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem;
+	border-radius: 50%;
+	transition: .4s;
+}
+.col .social a:hover{
+	transform: scale(1.2);
+	color: #808080;
+	background: #5c4033;
+}
